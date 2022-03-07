@@ -39,3 +39,9 @@ function largestPalindromeProduct(n) {
     return Math.max(...res);
 
 }
+
+// Function to Clear Information
+function clearInfo() {
+    let txt = "";
+    document.getElementById("numinfo").innerHTML = txt;
+}
