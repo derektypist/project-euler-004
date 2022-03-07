@@ -23,20 +23,23 @@ function getNumberInfo() {
 
 */
 function largestPalindromeProduct(n) {
-    let max = +[...Array(n)].reduce((a,c) => (a+=9),"");
-    let min = (max+1)/10;
-    let res = [];
-    for (let i=max;i>=min;i--) {
-        for (let j=max;j>=min;j--) {
-            let num = i*j;
-            let numReverse = [...String(num)].reverse().join('');
-            if (num == numReverse) {
-                res.push(num);
-                break;
-            }
+    const numReverse = (num) => {
+        return Number(num.toString().split('').reverse().join(''));
+    };
+
+    const isPalindrome = (num) => {
+        return numReverse(num) === num ? true : false;
+    };
+
+    let product = 0;
+    for (let i=10**(n-1);i<10**(n);i++) {
+        for (let j=10**(n-1);j<10**(n);j++) {
+            // Check if the product is a palindrome
+            if (isPalindrome(i*j) && i*j > product) product = i*j;
         }
     }
-    return Math.max(...res);
+
+    return product;
 
 }
 
