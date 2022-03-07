@@ -20,6 +20,7 @@ function getNumberInfo() {
     Function to Return the largest palindrome made from the product of
     two n-digit numbers.
     largestPalindromeProduct(2) returns 9009
+    largestPalindromeProduct(3) returns 906609
 
 */
 function largestPalindromeProduct(n) {
