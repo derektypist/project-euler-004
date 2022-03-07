@@ -35,7 +35,7 @@ function largestPalindromeProduct(n) {
     let product = 0;
     for (let i=10**(n-1);i<10**(n);i++) {
         for (let j=10**(n-1);j<10**(n);j++) {
-            // Check if the product is a palindrome
+            // Check if i*j is a palindrome and i*j is greater than existing product
             if (isPalindrome(i*j) && i*j > product) product = i*j;
         }
     }
