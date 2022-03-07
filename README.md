@@ -30,3 +30,30 @@ As a user, I expect `largestPalindromeProduct(3)` to return 906609.
 **Information Architecture**
 
 The function `largestPalindromeProduct(n)` returns a number (integer), where `n` is between 1 and 4.
+
+## Features
+
+Allows the user to enter the number as well as the largest palindrome product of that n-digit number.  For example, if the number was 2, the largest palindrome is 9009.  Performs checks on valid user input.  If the input is not valid, an error message is displayed.
+
+## Technologies
+
+Uses HTML5, CSS3, JavaScript, Google Fonts and Bootstrap 5.1.3.
+
+## Testing
+
+Ensure all user stories have been met.
+
+## Deployment
+
+Deployed on [GitHub Pages](https://derektypist.github.io/project-euler-004) at the main branch.
+
+## Credits
+
+### Content
+
+Written be me.
+
+### Acknowledgements
+
+- [Project Euler](https://projecteuler.net)
+- [FreeCodeCamp](https://www.freecodecamp.org)
